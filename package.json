@@ -1,0 +1,19 @@
+{
+	"name": "resume_website",
+	"version": "1.0.0",
+	"description": "My CV on a website",
+	"default": "index.html",
+	"scripts": {
+		"start": "parcel index.html",
+		"build": "parcel build index.html --dist-dir ./dist"
+	},
+	"author": "Georgios Antoniadis",
+	"license": "ISC",
+	"devDependencies": {
+		"parcel": "^2.0.1"
+	},
+	"dependencies": {
+		"core-js": "^3.19.1",
+		"regenerator-runtime": "^0.13.9"
+	}
+}

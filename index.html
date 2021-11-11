@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Online Resume | My Website</title>
+		<link rel="shortcut icon" type="image/png" href="resources/images/icon.png" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<script type="module" defer src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="flex-wrapper-header">
+					<h2 class="header">Βιογραφικό Σημείωμα</h2>
+					<h1 class="header my-name">Γεώργιος Αντωνιάδης</h1>
+					<!-- <button class="header show-modal btn btn-outline-dark border-dark rounded-pill"> -->
+					<button class="header show-modal btn btn-primary border-dark">
+						Στοιχεία Επικοινωνίας
+					</button>
+				</div>
+				<div class="flex-wrapper-under-header">
+					<!-- Invisible characters to take up space and help align the under-header elements -->
+					<div style="opacity: 0">aaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+					<h2 class="under-header">Junior Software Developer</h2>
+					<!-- <a class="under-header" href="/resources/images/uop.png" download="cv" > -->
+					<button class="under-header downloadCV btn btn-primary border-dark">
+						Λήψη Βιογραφικού
+					</button>
+					<!-- </a> -->
+				</div>
+			</header>
+			<article class="grid">
+				<div class="gridElement el1">
+					<h3>Προσωπικές Πληροφορίες</h3>
+					Διεύθυνση: Καποδιστρίου 26, Πειραιάς <br />
+					Ημερομηνία Γέννησης: 20/03/1996 <br />
+					Στρατιωτικές Υποχρεώσεις: Εκπληρωμένες <br />
+					Github Repository:
+					<a href="https://github.com/George-Anto" target="_blank" class="link"
+						>My Github Account
+					</a>
+					<br />
+				</div>
+				<div class="gridElement el2">
+					<h3>Εκπαίδευση</h3>
+					2021 - παρόν: Μεταπτυχιακό (MSc) "Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού
+					και Τεχνητής Νοημοσύνης", Πανεπιστήμιο Πειραιά
+					<a
+						href="https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=626&Itemid=815&lang=el"
+						target="_blank"
+						><img src="/resources/images/uop.png" width="30" height="30" alt="uop" />
+					</a>
+					<br />
+					2014 - 2020: Πτυχίο (BSc) "Εφαρμοσμένη Πληροφορική", Πανεπιστήμιο Μακεδονίας
+					<a href="https://www.uom.gr/en/dai" target="_blank">
+						<img src="/resources/images/uom.png" width="30" height="30" alt="uom" />
+					</a>
+					<br />
+					<h4>Ξένες Γλώσσες</h4>
+					Αγγλικά: Michigan Proficiency - ECPE (C2) <br />
+					Γερμανικά: Goethe - Zertifikat (B1) <br />
+				</div>
+				<div class="gridElement el3">
+					<h3>Γνώσεις - Δεξιότητες</h3>
+					<ul>
+						<li>
+							JavaScript -
+							<a
+								href="resources/online_certificates/JavaScript_Udemy_Certificate.pdf"
+								target="_blank"
+								class="link"
+								>Udemy Course Certification
+							</a>
+						</li>
+						<li>
+							Python -
+							<a
+								href="resources/online_certificates/Python_Udemy_Certificate.pdf"
+								target="_blank"
+								class="link"
+								>Udemy Course Certification
+							</a>
+						</li>
+						<li>
+							Microsoft SQL -
+							<a
+								href="resources/online_certificates/Microsoft_SQL_Udemy_Certificate.pdf"
+								target="_blank"
+								class="link"
+								>Udemy Course Certification
+							</a>
+						</li>
+						<li>Java - Spring Framework</li>
+						<li>Angular 2 Framework</li>
+						<li>HTML5, CSS3, Bootstrap</li>
+						<li>
+							Scrum Funtamentals -
+							<a
+								href="resources/online_certificates/SCRUM_Funtamentals_Certificate.pdf"
+								target="_blank"
+								class="link"
+								>SCRUMstudy Course Certification
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="gridElement el4">
+					<h3>Εργασιακή Εμπειρία</h3>
+					2021 (Ιούλιος - Αύγουστος): Πρακτική - Summer Camp στην εταιρία OTS, Θεσσαλονίκη
+					<a href="https://ots.gr/" target="_blank"
+						><img src="/resources/images/ots.jpg" width="35" height="35" alt="ots"
+					/></a>
+					<a
+						href="/resources/ots/Certificate of Completion OTS Summer Camp 2021 Georgios Antoniadis.pdf"
+						target="_blank"
+						class="link"
+						>Πιστοποιητικό Συμμετοχής
+					</a>
+				</div>
+			</article>
+			<div class="modal-window hidden">
+				<button class="close-modal">&times;</button>
+				<h3 class="modal-title">Μπορείτε να επικοινωνήσετε μαζί μου με τους ακόλουθους τρόπους:</h3>
+				<p class="modal-body">
+					<img
+						src="resources/images/cellphone.png "
+						width="108"
+						height="100"
+						alt="cellphone"
+					/>Κινητό Τηλέφωνο: 6986662282
+				</p>
+				<p class="modal-body">
+					<img src="resources/images/email.png " width="108" height="100" alt="cellphone" />E-mail:
+					gantoniadis20@gmail.com
+				</p>
+			</div>
+			<div class="overlay hidden"></div>
+		</div>
+		<footer>
+			<div>Random motivational quote:</div>
+			<div class="quote">The quote will be here soon.</div>
+			<div class="author">The author of the quote.</div>
+			<br />
+			<div class="copyrights">© 2021 Georgios Antoniadis. All rights reserved.</div>
+		</footer>
+	</body>
+</html>
