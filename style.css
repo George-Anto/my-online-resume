@@ -194,6 +194,7 @@ footer .copyrights {
 	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
 	z-index: 10;
 	background: linear-gradient(to top left, #a1e9d9, #daf3ef);
+	overflow-wrap: break-word;
 }
 
 .close-modal {
@@ -214,7 +215,6 @@ footer .copyrights {
 }
 
 .modal-body {
-	overflow-wrap: break-word;
 	font-size: 30px;
 	font-weight: normal;
 }
