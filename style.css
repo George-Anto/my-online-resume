@@ -19,7 +19,7 @@ body {
 	line-height: 1.4;
 	background: linear-gradient(to top left, #6e88d1, #d8eef3);
 }
-
+/* 
 .flex-wrapper-header {
 	display: flex;
 	justify-content: space-between;
@@ -37,7 +37,7 @@ body {
 	align-items: baseline;
 	align-items: right;
 	justify-content: space-between;
-}
+} */
 
 .header {
 	font-size: 25px;
@@ -52,6 +52,62 @@ body {
 .under-header {
 	font-size: 20px;
 	flex-shrink: 1;
+}
+
+.header-grid {
+	display: grid;
+	margin: 10px;
+	gap: 10px;
+	/* grid-auto-flow: row dense; */
+	/* border-radius: 30px; */
+	/* border: 2px solid black; */
+	/* background-color: #eceaea; */
+	/* margin-top: 1%; */
+	/* grid-template-columns: repeat(3, 3fr); */
+	/* grid-template-columns: repeat(auto-fit, minmax(250px, 2fr)); */
+	grid-template-columns: 2fr, 3fr, 2fr;
+	/* grid-template-columns: auto minmax(0, 1fr); */
+	/* Defines the space each row will occupy in the grid layout*/
+	/* grid-auto-rows: 110px; */
+	grid-template-areas:
+		"h-a h-b h-c"
+		"h-d h-e h-f";
+}
+
+.h-el1 {
+	grid-area: h-a;
+	/* text-align: center; */
+	/* justify-self: center; */
+	align-self: center;
+}
+.h-el2 {
+	grid-area: h-b;
+	/* text-align: center; */
+	justify-self: center;
+	align-self: center;
+}
+.h-el3 {
+	grid-area: h-c;
+	width: 270px;
+	height: 50px;
+	justify-self: end;
+}
+.h-el4 {
+	grid-area: h-d;
+	justify-self: center;
+}
+.h-el5 {
+	grid-area: h-e;
+	/* text-align: center;
+	align-items: center; */
+	justify-self: center;
+	align-self: center;
+}
+.h-el6 {
+	grid-area: h-f;
+	width: 270px;
+	height: 50px;
+	justify-self: end;
 }
 
 .grid {
@@ -118,6 +174,7 @@ body {
 .el2 h4 {
 	padding-top: 5px;
 	font-style: italic;
+	font-size: 17px;
 	color: black;
 }
 
