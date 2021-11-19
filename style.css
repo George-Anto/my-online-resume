@@ -107,6 +107,9 @@ body {
 	.h-el1 {
 		justify-self: center;
 	}
+	.h-el2 {
+		text-align: center;
+	}
 	.h-el3 {
 		height: auto;
 		justify-self: center;
