@@ -297,6 +297,7 @@ footer .copyrights {
 	.modal-window {
 		top: 20%;
 		width: 85%;
+		padding: 5rem;
 	}
 	.modal-title {
 		font-size: 20px;
