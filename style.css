@@ -35,7 +35,7 @@ body {
 
 .header-grid {
 	display: grid;
-	grid-template-columns: 2fr 4fr 2fr;
+	grid-template-columns: 2fr 3fr 2fr;
 	margin: 10px;
 	gap: 10px;
 	grid-template-areas:
@@ -43,7 +43,7 @@ body {
 		"h-d h-e h-f";
 }
 
-@media only screen and (max-width: 700px) {
+/* @media only screen and (max-width: 700px) {
 	.header-grid {
 		grid-template-columns: 3fr;
 		grid-template-areas:
@@ -54,11 +54,11 @@ body {
 			"h-e"
 			"h-f";
 	}
-}
+} */
 
 .h-el1 {
 	grid-area: h-a;
-	justify-self: center;
+	justify-self: flex-start;
 	align-self: center;
 }
 
@@ -72,7 +72,7 @@ body {
 	grid-area: h-c;
 	width: 270px;
 	height: 50px;
-	justify-self: center;
+	justify-self: flex-end;
 }
 
 .h-el4 {
@@ -90,7 +90,31 @@ body {
 	grid-area: h-f;
 	width: 270px;
 	height: 50px;
-	justify-self: center;
+	justify-self: flex-end;
+}
+
+@media all and (max-width: 700px) {
+	.header-grid {
+		grid-template-columns: 3fr;
+		grid-template-areas:
+			"h-a"
+			"h-b"
+			"h-c"
+			"h-d"
+			"h-e"
+			"h-f";
+	}
+	.h-el1 {
+		justify-self: center;
+	}
+	.h-el3 {
+		height: auto;
+		justify-self: center;
+	}
+	.h-el6 {
+		height: auto;
+		justify-self: center;
+	}
 }
 
 .grid {
