@@ -79,7 +79,6 @@ body {
 	grid-area: h-d;
 	display: grid;
 	grid-template-columns: 0.4fr 0.4fr;
-	/* justify-self: flex-start; */
 	align-self: center;
 }
 
@@ -87,7 +86,6 @@ body {
 	font-size: 20px;
 	color: rgb(153, 146, 136);
 	text-decoration: none;
-	justify-self: center;
 }
 
 .translate-btn:hover {
@@ -307,6 +305,9 @@ footer .copyrights {
 	}
 	.h-el3 {
 		height: auto;
+		justify-self: center;
+	}
+	.h-el4 {
 		justify-self: center;
 	}
 	.h-el6 {

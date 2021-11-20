@@ -16,6 +16,7 @@ const btnDownloadCV = document.querySelector(".downloadCV");
 const btnGreek = document.querySelector(".btn-greek");
 const btnEnglish = document.querySelector(".btn-english");
 
+//DOM elemtents for translation
 const headerEl1 = document.querySelector(".h-el1");
 const headerEl2 = document.querySelector(".h-el2");
 const headerEl3 = document.querySelector(".h-el3");
