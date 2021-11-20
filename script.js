@@ -13,6 +13,16 @@ const motivationalQuoteAuthor = document.querySelector(".author");
 
 const btnDownloadCV = document.querySelector(".downloadCV");
 
+const btnGreek = document.querySelector(".btn-greek");
+const btnEnglish = document.querySelector(".btn-english");
+
+const headerEl1 = document.querySelector(".h-el1");
+const headerEl2 = document.querySelector(".h-el2");
+const headerEl3 = document.querySelector(".h-el3");
+const headerEl6 = document.querySelector(".h-el6");
+
+let isGreek = true;
+
 const closeModal = function () {
 	modal.classList.add("hidden");
 	overlay.classList.add("hidden");
@@ -61,6 +71,10 @@ const pdfCVNotReady = function () {
 		`Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.`
 	);
 };
+
+const translateToGreek = function () {};
+
+const translateToEnglish = function () {};
 
 btnShowModal.addEventListener("click", showModal);
 

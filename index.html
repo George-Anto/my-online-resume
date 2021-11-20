@@ -29,7 +29,10 @@
 					<button class="header show-modal btn btn-primary border-dark h-el3">
 						Στοιχεία Επικοινωνίας
 					</button>
-					<!-- <div class="h-el4"></div> -->
+					<div class="h-el4">
+						<button class="btn btn-link translate-btn btn-greek tr-btn-selected">Ελληνικά</button>
+						<button class="btn btn-link translate-btn btn-english">English</button>
+					</div>
 					<h2 class="under-header h-el5">Junior Software Developer</h2>
 					<!-- <a class="under-header" href="/resources/images/uop.png" download="cv" > -->
 					<button class="under-header downloadCV btn btn-primary border-dark h-el6">
@@ -40,10 +43,13 @@
 			</header>
 			<section class="grid">
 				<div class="gridElement el1">
-					<h3>Προσωπικές Πληροφορίες</h3>
-					Διεύθυνση: Καποδιστρίου 26, Πειραιάς <br />
-					Ημερομηνία Γέννησης: 20/03/1996 <br />
-					Στρατιωτικές Υποχρεώσεις: Εκπληρωμένες <br />
+					<h3 id="personal-info">Προσωπικές Πληροφορίες</h3>
+					<span id="personal-info1">Διεύθυνση: Καποδιστρίου 26, Πειραιάς</span>
+					<br />
+					<span id="personal-info2">Ημερομηνία Γέννησης: 20/03/1996</span>
+					<br />
+					<span id="personal-info3">Στρατιωτικές Υποχρεώσεις: Εκπληρωμένες</span>
+					<br />
 					Github Repository:
 					<a href="https://github.com/George-Anto" target="_blank" class="link"
 						>My Github Account
@@ -51,26 +57,30 @@
 					<br />
 				</div>
 				<div class="gridElement el2">
-					<h3>Εκπαίδευση</h3>
-					2021 - παρόν: Μεταπτυχιακό (MSc) "Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού
-					και Τεχνητής Νοημοσύνης", Πανεπιστήμιο Πειραιά
+					<h3 id="education">Εκπαίδευση</h3>
+					<span id="education1"
+						>2021 - παρόν: Μεταπτυχιακός φοιτητής (MSc) "Προηγμένα Συστήματα Πληροφορικής -
+						Ανάπτυξη Λογισμικού και Τεχνητής Νοημοσύνης", Πανεπιστήμιο Πειραιά
+					</span>
 					<a
 						href="https://www.cs.unipi.gr/index.php?option=com_k2&view=item&layout=item&id=626&Itemid=815&lang=el"
 						target="_blank"
 						><img src="/resources/images/uop.png" width="30" height="30" alt="uop" />
 					</a>
 					<br />
-					2014 - 2020: Πτυχίο (BSc) "Εφαρμοσμένη Πληροφορική", Πανεπιστήμιο Μακεδονίας
+					<span id="education2"
+						>2014 - 2020: Πτυχίο (BSc) "Εφαρμοσμένη Πληροφορική", Πανεπιστήμιο Μακεδονίας
+					</span>
 					<a href="https://www.uom.gr/en/dai" target="_blank">
 						<img src="/resources/images/uom.png" width="30" height="30" alt="uom" />
 					</a>
 					<br />
-					<h4>Ξένες Γλώσσες</h4>
-					Αγγλικά: Michigan Proficiency - ECPE (C2) <br />
-					Γερμανικά: Goethe - Zertifikat (B1) <br />
+					<h4 id="education3">Ξένες Γλώσσες</h4>
+					<span id="education4">Αγγλικά: Michigan Proficiency - ECPE (C2)</span> <br />
+					<span id="education5">Γερμανικά: Goethe - Zertifikat (B1)</span> <br />
 				</div>
 				<div class="gridElement el3">
-					<h3>Γνώσεις - Δεξιότητες</h3>
+					<h3 id="knowledge">Γνώσεις - Δεξιότητες</h3>
 					<ul>
 						<li>
 							JavaScript -
@@ -114,8 +124,10 @@
 					</ul>
 				</div>
 				<div class="gridElement el4">
-					<h3>Εργασιακή Εμπειρία</h3>
-					2021 (Ιούλιος - Αύγουστος): Πρακτική - Summer Camp στην εταιρία OTS, Θεσσαλονίκη
+					<h3 id="work">Εργασιακή Εμπειρία</h3>
+					<span id="work1"
+						>2021 (Ιούλιος - Αύγουστος): Πρακτική - Summer Camp στην εταιρία OTS, Θεσσαλονίκη
+					</span>
 					<a href="https://ots.gr/" target="_blank"
 						><img src="/resources/images/ots.jpg" width="35" height="35" alt="ots"
 					/></a>
@@ -131,12 +143,8 @@
 				<button class="close-modal">&times;</button>
 				<h3 class="modal-title">Μπορείτε να επικοινωνήσετε μαζί μου με τους ακόλουθους τρόπους:</h3>
 				<p class="modal-body">
-					<img
-						src="resources/images/cellphone.png "
-						width="108"
-						height="100"
-						alt="cellphone"
-					/>Κινητό Τηλέφωνο: 6986662282
+					<img src="resources/images/cellphone.png " width="108" height="100" alt="cellphone" />
+					<span id="cellphone">Κινητό Τηλέφωνο: 6986662282</span>
 				</p>
 				<p class="modal-body">
 					<img src="resources/images/email.png " width="108" height="100" alt="cellphone" />Email:

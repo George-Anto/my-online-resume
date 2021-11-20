@@ -1,0 +1,88 @@
+{
+	"translations": [
+		{
+			"greek": "Βιογραφικό Σημείωμα",
+			"english": "Curriculum Vitae"
+		},
+		{
+			"greek": "Γεώργιος Αντωνιάδης",
+			"english": "Georgios Antoniadis"
+		},
+		{
+			"greek": "Στοιχεία Επικοινωνίας",
+			"english": "Contact Information"
+		},
+		{
+			"greek": "Λήψη Βιογραφικού",
+			"english": "Download CV"
+		},
+		{
+			"greek": "Προσωπικές Πληροφορίες",
+			"english": "Personal Information"
+		},
+		{
+			"greek": "Διεύθυνση: Καποδιστρίου 26, Πειραιάς",
+			"english": "Address: 26 Kapodistriou, Piraeus"
+		},
+		{
+			"greek": "Ημερομηνία Γέννησης: 20/03/1996",
+			"english": "Date of Birth: 20/03/1996"
+		},
+		{
+			"greek": "Στρατιωτικές Υποχρεώσεις: Εκπληρωμένες",
+			"english": "Military Obligations: Fulfilled"
+		},
+		{
+			"greek": "Εκπαίδευση",
+			"english": "Education"
+		},
+		{
+			"greek": "2021 - παρόν: Μεταπτυχιακός φοιτητής (MSc) \"Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού και Τεχνητής Νοημοσύνης\", Πανεπιστήμιο Πειραιά",
+			"english": "2021 - present: Postgraduate student (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence\", University of Piraeus"
+		},
+		{
+			"greek": "2014 - 2020: Πτυχίο (BSc) \"Εφαρμοσμένη Πληροφορική\", Πανεπιστήμιο Μακεδονίας",
+			"english": "2014 - 2020: Bachelor's Degree (BSc) \"Applied Informatics\", University of Macedonia"
+		},
+		{
+			"greek": "Ξένες Γλώσσες",
+			"english": "Foreign Languages"
+		},
+		{
+			"greek": "Αγγλικά: Michigan Proficiency - ECPE (C2)",
+			"english": "English: Michigan Proficiency - ECPE (C2)"
+		},
+		{
+			"greek": "Γερμανικά: Goethe - Zertifikat (B1)",
+			"english": "German: Goethe - Zertifikat (B1)"
+		},
+		{
+			"greek": "Γνώσεις - Δεξιότητες",
+			"english": "Knowledge - Skills"
+		},
+		{
+			"greek": "Εργασιακή Εμπειρία",
+			"english": "Work Experience"
+		},
+		{
+			"greek": "2021 (Ιούλιος - Αύγουστος): Πρακτική - Summer Camp στην εταιρία OTS, Θεσσαλονίκη",
+			"english": "2021 (July - August): Internship - Summer Camp at OTS, Thessaloniki"
+		},
+		{
+			"greek": "Πιστοποιητικό Συμμετοχής",
+			"english": "Certificate of Participation"
+		},
+		{
+			"greek": "Μπορείτε να επικοινωνήσετε μαζί μου με τους ακόλουθους τρόπους:",
+			"english": "You can contact me in the following ways:"
+		},
+		{
+			"greek": "Κινητό Τηλέφωνο: 6986662282",
+			"english": "Mobile Phone: 6986662282"
+		},
+		{
+			"greek": "Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.",
+			"english": "The electronic copy of the CV that will be available for download has not been completed yet."
+		}
+	]
+}
