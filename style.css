@@ -225,6 +225,8 @@ footer div {
 	font-size: 15px;
 	text-align: center;
 	line-height: 1.5;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 footer .quote {
@@ -292,10 +294,10 @@ footer .copyrights {
 		grid-template-areas:
 			"h-a"
 			"h-b"
-			"h-c"
-			"h-d"
 			"h-e"
-			"h-f";
+			"h-c"
+			"h-f"
+			"h-d";
 	}
 	.h-el1 {
 		justify-self: center;

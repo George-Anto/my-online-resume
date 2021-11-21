@@ -21,6 +21,45 @@ const headerEl1 = document.querySelector(".h-el1");
 const headerEl2 = document.querySelector(".h-el2");
 const headerEl3 = document.querySelector(".h-el3");
 const headerEl6 = document.querySelector(".h-el6");
+const personalInfoEl = document.querySelector("#personal-info");
+const personalInfoEl1 = document.querySelector("#personal-info1");
+const personalInfoEl2 = document.querySelector("#personal-info2");
+const personalInfoEl3 = document.querySelector("#personal-info3");
+const educationEl = document.querySelector("#education");
+const educationEl1 = document.querySelector("#education1");
+const educationEl2 = document.querySelector("#education2");
+const educationEl3 = document.querySelector("#education3");
+const educationEl4 = document.querySelector("#education4");
+const educationEl5 = document.querySelector("#education5");
+const knowledgeEl = document.querySelector("#knowledge");
+const workEl = document.querySelector("#work");
+const workEl1 = document.querySelector("#work1");
+const linkEl = document.querySelector("#my-link");
+const modalTitleEl = document.querySelector(".modal-title");
+const cellphoneEl = document.querySelector("#cellphone");
+
+const elementsForTranslation = [];
+
+elementsForTranslation.push(headerEl1);
+elementsForTranslation.push(headerEl2);
+elementsForTranslation.push(headerEl3);
+elementsForTranslation.push(headerEl6);
+elementsForTranslation.push(personalInfoEl);
+elementsForTranslation.push(personalInfoEl1);
+elementsForTranslation.push(personalInfoEl2);
+elementsForTranslation.push(personalInfoEl3);
+elementsForTranslation.push(educationEl);
+elementsForTranslation.push(educationEl1);
+elementsForTranslation.push(educationEl2);
+elementsForTranslation.push(educationEl3);
+elementsForTranslation.push(educationEl4);
+elementsForTranslation.push(educationEl5);
+elementsForTranslation.push(knowledgeEl);
+elementsForTranslation.push(workEl);
+elementsForTranslation.push(workEl1);
+elementsForTranslation.push(linkEl);
+elementsForTranslation.push(modalTitleEl);
+elementsForTranslation.push(cellphoneEl);
 
 let isGreek = true;
 
@@ -67,15 +106,41 @@ const insertQuoteInDOM = async function () {
 	}
 };
 
-const pdfCVNotReady = function () {
-	alert(
-		`Το ηλεκτρονικό αντίτυπο του βιογραφικού που θα είναι διαθέσιμο για λήψη, δεν έχει ολοκληρωθεί ακόμα.`
-	);
+const fetchTranslations = async function () {
+	try {
+		return fetch("resources/data/translate.json")
+			.then(responce => responce.json())
+			.then(translations => {
+				return translations;
+			});
+	} catch (error) {
+		console.error(`Custom Error2: ${error}`);
+	}
 };
 
-const translateToGreek = function () {};
+const translateTo = async function (language) {
+	try {
+		const translationObj = await fetchTranslations();
 
-const translateToEnglish = function () {};
+		elementsForTranslation.forEach(
+			(elementForTranslation, index) =>
+				(elementForTranslation.innerHTML = translationObj.translations[index][language])
+		);
+	} catch (err) {
+		console.error(err);
+	}
+};
+
+const pdfCVNotReady = async function () {
+	try {
+		const translationObj = await fetchTranslations();
+		alert(
+			translationObj.translations[translationObj.translations.length - 1][isGreek ? "greek" : "english"]
+		);
+	} catch (err) {
+		console.error(err);
+	}
+};
 
 btnShowModal.addEventListener("click", showModal);
 
@@ -90,5 +155,25 @@ document.addEventListener("keydown", function (keyEventObj) {
 });
 
 btnDownloadCV.addEventListener("click", pdfCVNotReady);
+
+btnGreek.addEventListener("click", function () {
+	this.blur();
+	if (isGreek) return;
+
+	translateTo("greek");
+	isGreek = true;
+	this.classList.toggle("tr-btn-selected");
+	btnEnglish.classList.toggle("tr-btn-selected");
+});
+
+btnEnglish.addEventListener("click", function () {
+	this.blur();
+	if (!isGreek) return;
+
+	translateTo("english");
+	isGreek = false;
+	this.classList.toggle("tr-btn-selected");
+	btnGreek.classList.toggle("tr-btn-selected");
+});
 
 insertQuoteInDOM();
