@@ -1,6 +1,6 @@
 "use strict";
-import "core-js/stable";
-import "regenerator-runtime/runtime";
+// import "core-js/stable";
+// import "regenerator-runtime/runtime";
 
 const modal = document.querySelector(".modal-window");
 const overlay = document.querySelector(".overlay");
