@@ -1,5 +1,4 @@
 :root {
-	/* --left-side-grid: #9097ac; */
 	--left-side-grid: #c8ccd8;
 }
 
@@ -186,7 +185,6 @@ body {
 
 .el4 {
 	grid-area: d;
-	/* align-self: center; */
 	line-height: 1;
 	font-weight: normal;
 }
@@ -280,7 +278,7 @@ footer .copyrights {
 	z-index: 5;
 }
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1050px) {
 	.header-grid {
 		grid-template-columns: 3fr;
 		grid-template-areas:
@@ -320,6 +318,14 @@ footer .copyrights {
 	}
 	.modal-body {
 		font-size: 20px;
+	}
+	.cellphone-img {
+		width: 81px;
+		height: 75px;
+	}
+	.email-img {
+		width: 81px;
+		height: 75px;
 	}
 }
 
