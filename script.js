@@ -16,50 +16,36 @@ const btnDownloadCV = document.querySelector(".downloadCV");
 const btnGreek = document.querySelector(".btn-greek");
 const btnEnglish = document.querySelector(".btn-english");
 
-//DOM elemtents for translation
-const headerEl1 = document.querySelector(".h-el1");
-const headerEl2 = document.querySelector(".h-el2");
-const headerEl3 = document.querySelector(".h-el3");
-const headerEl6 = document.querySelector(".h-el6");
-const personalInfoEl = document.querySelector("#personal-info");
-const personalInfoEl1 = document.querySelector("#personal-info1");
-const personalInfoEl2 = document.querySelector("#personal-info2");
-const personalInfoEl3 = document.querySelector("#personal-info3");
-const educationEl = document.querySelector("#education");
-const educationEl1 = document.querySelector("#education1");
-const educationEl2 = document.querySelector("#education2");
-const educationEl3 = document.querySelector("#education3");
-const educationEl4 = document.querySelector("#education4");
-const educationEl5 = document.querySelector("#education5");
-const knowledgeEl = document.querySelector("#knowledge");
-const workEl = document.querySelector("#work");
-const workEl1 = document.querySelector("#work1");
-const linkEl = document.querySelector("#my-link");
-const modalTitleEl = document.querySelector(".modal-title");
-const cellphoneEl = document.querySelector("#cellphone");
-
 const elementsForTranslation = [];
 
-elementsForTranslation.push(headerEl1);
-elementsForTranslation.push(headerEl2);
-elementsForTranslation.push(headerEl3);
-elementsForTranslation.push(headerEl6);
-elementsForTranslation.push(personalInfoEl);
-elementsForTranslation.push(personalInfoEl1);
-elementsForTranslation.push(personalInfoEl2);
-elementsForTranslation.push(personalInfoEl3);
-elementsForTranslation.push(educationEl);
-elementsForTranslation.push(educationEl1);
-elementsForTranslation.push(educationEl2);
-elementsForTranslation.push(educationEl3);
-elementsForTranslation.push(educationEl4);
-elementsForTranslation.push(educationEl5);
-elementsForTranslation.push(knowledgeEl);
-elementsForTranslation.push(workEl);
-elementsForTranslation.push(workEl1);
-elementsForTranslation.push(linkEl);
-elementsForTranslation.push(modalTitleEl);
-elementsForTranslation.push(cellphoneEl);
+//Helper function
+const selectEl = function (DOMEl) {
+	return document.querySelector(DOMEl);
+};
+
+//DOM elemtents for translation
+elementsForTranslation.push(selectEl(".h-el1"));
+elementsForTranslation.push(selectEl(".h-el2"));
+elementsForTranslation.push(selectEl(".h-el3"));
+elementsForTranslation.push(selectEl(".h-el6"));
+elementsForTranslation.push(selectEl("#personal-info"));
+elementsForTranslation.push(selectEl("#personal-info1"));
+elementsForTranslation.push(selectEl("#personal-info2"));
+elementsForTranslation.push(selectEl("#personal-info3"));
+elementsForTranslation.push(selectEl("#summary"));
+elementsForTranslation.push(selectEl("#summary1"));
+elementsForTranslation.push(selectEl("#education"));
+elementsForTranslation.push(selectEl("#education1"));
+elementsForTranslation.push(selectEl("#education2"));
+elementsForTranslation.push(selectEl("#education3"));
+elementsForTranslation.push(selectEl("#education4"));
+elementsForTranslation.push(selectEl("#education5"));
+elementsForTranslation.push(selectEl("#knowledge"));
+elementsForTranslation.push(selectEl("#work"));
+elementsForTranslation.push(selectEl("#work1"));
+elementsForTranslation.push(selectEl("#my-link"));
+elementsForTranslation.push(selectEl(".modal-title"));
+elementsForTranslation.push(selectEl("#cellphone"));
 
 let isGreek = true;
 
@@ -154,7 +140,10 @@ document.addEventListener("keydown", function (keyEventObj) {
 	}
 });
 
-btnDownloadCV.addEventListener("click", pdfCVNotReady);
+btnDownloadCV.addEventListener("click", function () {
+	this.blur();
+	pdfCVNotReady();
+});
 
 btnGreek.addEventListener("click", function () {
 	this.blur();

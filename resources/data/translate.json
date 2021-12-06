@@ -33,12 +33,20 @@
 			"english": "Military Obligations: Fulfilled"
 		},
 		{
+			"greek": "Με λίγα λόγια...",
+			"english": "In a few words..."
+		},
+		{
+			"greek": "Junior προγραμματιστής, μεταπτυχιακός φοιτητής στην κατεύθυνση \"Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμική\" του τμήματος Πληροφορικής του ΠαΠει, με ιδιαίτερο ενδιαφέρον για τις εξελίξεις στην τεχνολογική πρόοδο, τις εδραιομένες αλλά και τις ανερχόμενες τεχνικές σχεδίασης και υλοποίησης έργων λογισμκού. Στα πρώτα μου βήματα επιθυμώ να εξελίξω τις γνώσεις μου και τις ικανότητες μου στην δημιουργία ολοκληρωμένων web applications με ομαδική δουλειά και συνεργασία όπως και στην κατασκευή προγραμμάτων με γνώμονα καλές πρακτικές και πρότυπα σχεδίασης.",
+			"english": "Junior programmer, postgraduate student in the field of \"Advanced Software Development Technologies\" in the department of Computer Science of UoP, with particular interest for the developments in technological progress, the established but also the emerging techniques for designing and implementing software projects. In my first steps i desire to upgrade my knowledge and abilities to  create complete web applications with teamwork and collaboration as well as programming based on good practices and design patterns."
+		},
+		{
 			"greek": "Εκπαίδευση",
 			"english": "Education"
 		},
 		{
-			"greek": "2021 - παρόν: Μεταπτυχιακός φοιτητής (MSc) \"Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού και Τεχνητής Νοημοσύνης\", Πανεπιστήμιο Πειραιά",
-			"english": "2021 - present: Postgraduate student (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence\", University of Piraeus"
+			"greek": "2021 - παρόν: Μεταπτυχιακός φοιτητής (MSc) \"Προηγμένα Συστήματα Πληροφορικής - Ανάπτυξη Λογισμικού και Τεχνητής Νοημοσύνης, Κατεύθυνση: Προηγμένες Τεχνολογίες Ανάπτυξης Λογισμικού\", Πανεπιστήμιο Πειραιά",
+			"english": "2021 - present: Postgraduate student (MSc) \"Advanced Information Systems - Software Development and Artificial Intelligence, Field: Advanced Software Development Technologies\", University of Piraeus"
 		},
 		{
 			"greek": "2014 - 2020: Πτυχίο (BSc) \"Εφαρμοσμένη Πληροφορική\", Πανεπιστήμιο Μακεδονίας",
