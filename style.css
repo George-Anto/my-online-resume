@@ -43,31 +43,31 @@ body {
 	margin: 10px;
 	gap: 10px;
 	grid-template-areas:
-		"h-a h-b h-c"
-		"h-d h-e h-f";
+		"header-cv header-name header-contact"
+		"header-translate header-junior header-download";
 }
 
 .h-el1 {
-	grid-area: h-a;
+	grid-area: header-cv;
 	justify-self: flex-start;
 	align-self: center;
 }
 
 .h-el2 {
-	grid-area: h-b;
+	grid-area: header-name;
 	justify-self: center;
 	align-self: center;
 }
 
 .h-el3 {
-	grid-area: h-c;
+	grid-area: header-contact;
 	width: 270px;
 	height: 50px;
 	justify-self: flex-end;
 }
 
 .h-el4 {
-	grid-area: h-d;
+	grid-area: header-translate;
 	display: grid;
 	grid-template-columns: 0.4fr 0.4fr;
 	align-self: center;
@@ -89,13 +89,13 @@ body {
 }
 
 .h-el5 {
-	grid-area: h-e;
+	grid-area: header-junior;
 	justify-self: center;
 	align-self: center;
 }
 
 .h-el6 {
-	grid-area: h-f;
+	grid-area: header-download;
 	width: 270px;
 	height: 50px;
 	justify-self: flex-end;
@@ -111,11 +111,11 @@ body {
 	/* Defines the space each row will occupy in the grid layout*/
 	/* grid-auto-rows: 110px; */
 	grid-template-areas:
-		"a a a e e e e e "
-		"c c c d d d d d "
-		"c c c d d d d d"
-		"c c c b b b b b"
-		"c c c b b b b b";
+		"info info info paragraph paragraph paragraph paragraph paragraph"
+		"knowledge knowledge knowledge work work work work work "
+		"knowledge knowledge knowledge work work work work work"
+		"knowledge knowledge knowledge education education education education education"
+		"knowledge knowledge knowledge education education education education education";
 }
 
 .gridElement {
@@ -139,7 +139,7 @@ body {
 .el1 {
 	border-top-left-radius: 30px;
 	background-color: var(--left-side-grid);
-	grid-area: a;
+	grid-area: info;
 	line-height: 2;
 	color: black;
 	font-weight: normal;
@@ -151,8 +151,7 @@ body {
 }
 
 .el2 {
-	grid-area: b;
-	/* align-self: start; */
+	grid-area: education;
 	line-height: 2;
 	font-weight: normal;
 }
@@ -172,9 +171,8 @@ body {
 
 .el3 {
 	background-color: var(--left-side-grid);
-	grid-area: c;
+	grid-area: knowledge;
 	border-bottom-left-radius: 30px;
-	/* align-self: end; */
 	color: black;
 	font-weight: normal;
 	line-height: 2.2;
@@ -186,7 +184,7 @@ body {
 }
 
 .el4 {
-	grid-area: d;
+	grid-area: work;
 	font-weight: normal;
 }
 
@@ -201,7 +199,7 @@ body {
 }
 
 .el5 {
-	grid-area: e;
+	grid-area: paragraph;
 	font-weight: normal;
 }
 
@@ -294,8 +292,8 @@ footer .copyrights {
 	.header-grid {
 		grid-template-columns: 3fr;
 		grid-template-areas:
-			"h-a h-b h-c"
-			"h-d h-e h-f";
+			"header-cv header-name header-contact"
+			"header-translate header-junior header-download";
 	}
 	.h-el1 {
 		justify-self: center;
@@ -348,12 +346,12 @@ footer .copyrights {
 	.header-grid {
 		grid-template-columns: 3fr;
 		grid-template-areas:
-			"h-a"
-			"h-b"
-			"h-e"
-			"h-c"
-			"h-f"
-			"h-d";
+			"header-cv"
+			"header-name"
+			"header-junior"
+			"header-contact"
+			"header-download"
+			"header-translate";
 	}
 	.h-el1 {
 		justify-self: center;
