@@ -7,4 +7,4 @@ Link: `https://george-anto-personal-website.netlify.app/`
 
 ### Old Version
 This is the old version of my personal website.
-For the newer (2.0) version visit: `gantoniadis.netlify.app`
+For the newer (2.0) version visit: `https://gantoniadis.netlify.app`
